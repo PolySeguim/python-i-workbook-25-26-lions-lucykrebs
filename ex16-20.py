@@ -1,3 +1,4 @@
+import math
 
 """
 Exercise 16:  Area and Volume
@@ -9,6 +10,11 @@ module in your calculations.
 Hint:  The are of  circle is computed using the formula area = pi*r**2.  The 
 volume of a sphere is computed using the formula volume = 4/3 * pi * r**3.
 """
+radius = float(input("What is the radius?"))
+areaOfCircle = 3.14*((radius)**2)
+print ("The area of the circle is", areaOfCircle)
+volumeOfSphere = (4/3)*(3.14)*((radius)**3)
+print ("The volume of the sphere is", volumeOfSphere)
 
 """
 Exercise 17:  Heat Capacity

@@ -1,4 +1,3 @@
-
 """
 Exercise 1:  Mailing Address
 Create a program that displays your name and complete mailing 
@@ -6,10 +5,10 @@ address formatted in the manner that you would usually see it
 on the outside of an envelope.  Your program does not need to 
 read any input from the user.  (9 lines)
 """
-
-def whatType(userInput):
-    print(type(userInput))
-    print("Python RULES")
+print("Lucy Krebs")
+print("9325 Kemper Grove Ln")
+print("Cincinnati, OH 45140")
+print("United States")
 
 """
 Exercise 2:  Hello
@@ -17,6 +16,8 @@ Write a program that asks the user to enter his or her name.
 The program should respond with a message that says hello to 
 the user, using his or her name.  (9 lines)
 """
+name=input("What is your name?")
+print("Hello", name)
 
 """
 Exercise 3:  Area of a Room
@@ -28,6 +29,7 @@ numbers.  Include units in your prompt and output message;
 either feet or meters, depending on which unit you are more 
 comfortable working with.  (13 lines)
 """
+
 def areaRoom():
     print("Area of Room")
     units = input("What units are you using?  feet or meters: ")
@@ -37,6 +39,7 @@ def areaRoom():
     areaRoom = width*length
     print("Area of the room is " + str(areaRoom) + " " + units + " squared")
 
+
 """
 Exercise 4:  Area of a Field
 Create a program that reads the length and width of a 
@@ -44,6 +47,11 @@ farmer’s field from the user in feet.  Display the
 area of the field in acres.  
 Hint: There are 43,560 square feet in an acre
 """
+length = (input("What is the length of the field in feet?"))
+width = (input("What is the width of the field in feet?"))
+area = float(length)*float(width)
+acres = area/43560
+print("The area of the field is", acres, "acres")
 
 """
 Exercise 5:  Bottle Deposits
@@ -58,6 +66,13 @@ and displaying the refund that will be received for returning
 those containers.  Format the output so that it includes a dollar 
 sign and always displays exactly two decimal places.  (15 lines)
 """
+OneLiterOrLess=(input("How many containers of 1 liter or less do you have?"))
+MoreThanOneLiter=(input("How many containers of more than 1 liter do you have?"))
+OneLiterOrLessRefund=float(OneLiterOrLess)*0.10
+MoreThanOneLiterRefund=float(MoreThanOneLiter)*0.25
+TotalRefund=OneLiterOrLessRefund+MoreThanOneLiterRefund
+print("Your total refund is $", TotalRefund)
+
 
 def bottleDeposits():
     # reads the number of bottles
